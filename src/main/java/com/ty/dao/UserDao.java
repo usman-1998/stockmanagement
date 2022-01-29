@@ -11,7 +11,7 @@ import javax.persistence.Query;
 import com.ty.dto.User;
 
 public class UserDao {
-	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("dev");
+	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("stock");
 	EntityManager entityManager = entityManagerFactory.createEntityManager();
 	EntityTransaction entityTransaction = entityManager.getTransaction();
 

@@ -22,7 +22,8 @@ public class SeacrchItemServlet extends HttpServlet{
 		String type = req.getParameter("type");
 		
 		ItemDao dao = new ItemDao();
-		List<Item> items = dao.searchItem(item, type);
+		List<Item> items;
+		 items = dao.searchItem(item, type);
 		
 		req.setAttribute("items", items);
 		

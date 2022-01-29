@@ -25,7 +25,7 @@
 				<option value="Mobile">Mobile</option>
 				<option value="Laptop">Laptop</option>
 				<option value="TV">TV</option>
-				<option value="Ear Phone" >Ear Phone</option>
+				<option value="Ear Phone">Ear Phone</option>
 			</select><br>
 			<br>
 

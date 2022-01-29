@@ -34,8 +34,8 @@ li a:hover {
 <body>
 	<ul>
 		<li><a href="#">Create Item</a></li>
-		<li><a href="#">View Item</a></li>
-		<li><a href="#">Search Item</a></li>
+		<li><a href="getall">View Item</a></li>
+		<li><a href="search.jsp">Search Item</a></li>
 		<li style="float: right"><a class="active" href="#">Logout</a></li>
 	</ul>
 </body>

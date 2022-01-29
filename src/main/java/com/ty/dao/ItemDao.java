@@ -11,7 +11,7 @@ import javax.persistence.Query;
 import com.ty.dto.Item;
 
 public class ItemDao {
-	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("dev");
+	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("stock");
 	EntityManager entityManager = entityManagerFactory.createEntityManager();
 	EntityTransaction entityTransaction = entityManager.getTransaction();
 
@@ -52,6 +52,8 @@ public class ItemDao {
 			return list;
 		}
 	}
+	
+	
 	public void updateItem(Item item) {
 		entityTransaction.begin();
 		entityManager.merge(item);
