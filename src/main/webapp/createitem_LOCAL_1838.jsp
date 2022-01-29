@@ -8,7 +8,6 @@
 </style>
 </head>
 <body>
-<<<<<<< HEAD
 	<%
 	String message = (String) request.getAttribute("message");
 	if (message != null) {
@@ -19,15 +18,10 @@
 	%>
 	<table>
 		<form action="CreateItemServlet">
-=======
-	<table>
-		<form action="createtitem" method="post">
->>>>>>> 74c57e283ede47d68abf990f0df83cf130a9939c
 			<div class="container">
 				<h1>Item Creation</h1>
 
 				<tr>
-<<<<<<< HEAD
 
 					<label for="name"><b>Name</b></label>
 					<input type="text" placeholder="Enter Name" name="name" id="name"
@@ -60,35 +54,6 @@
 				<br>
 
 				<button type="submit" class="registerbtn">Create</button>
-=======
-					<td><label for="name"><b>Name</b></label></td>
-					<td><input type="text" placeholder="Enter Name" name="name" id="name"
-						required></td>
-				</tr>
-				<tr>
-					<td><label for="qnt"><b>Quantity</b></label></td>
-					<td><input type="number" placeholder="Enter Quantity" name="qnt"
-						id="qnt" required></td>
-				</tr>
-				<tr>
-					<td><label for="cost"><b>Cost</b></label></td>
-					<td><input type="number" placeholder="Enter Cost" name="cost"
-						id="cost" required></td>
-				</tr>
-				<tr>
-				<td><label for="type">Type:</label></td>
-				 <td><select id="type" name="type">
-				 	<option value=" "></option>
-					<option value="Mobile">Mobile</option>
-					<option value="Laptop">Laptop</option>
-					<option value="TV">TV</option>
-					<option value="Ear Phone">Ear Phone</option></td>
-				</select>
-				</tr>
-
-				<tr>
-				<td><button type="submit" class="registerbtn">Create</button></td></tr>
->>>>>>> 74c57e283ede47d68abf990f0df83cf130a9939c
 			</div>
 
 

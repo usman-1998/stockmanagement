@@ -34,17 +34,14 @@ public class ItemDao {
 
 	public List<Item> searchItem(String itemName, String itemType) {
 		if (itemName != null && itemType != null) {
-			Query query = entityManager.createQuery("Select item from Item item where name=?1 AND type=?2");
-			query.setParameter(1, itemName);
-			query.setParameter(2, itemType);
+			Query query = entityManager.createQuery("Select item from Item item where name like '%" + itemName
+					+ "%' AND type like '%" + itemType + "%'");
 			return query.getResultList();
 		} else if (itemName != null && itemType == null) {
-			Query query = entityManager.createQuery("Select item from Item item where name=?1");
-			query.setParameter(1, itemName);
+			Query query = entityManager.createQuery("Select item from Item item where name like '%" + itemName + "%'");
 			return query.getResultList();
 		} else if (itemName == null && itemType != null) {
-			Query query = entityManager.createQuery("Select item from Item item where type=?1");
-			query.setParameter(1, itemType);
+			Query query = entityManager.createQuery("Select item from Item item where type like '%" + itemType + "%'");
 			return query.getResultList();
 		} else {
 			Query query = entityManager.createQuery("select item from Item item");

@@ -33,9 +33,15 @@ li a:hover {
 </head>
 <body>
 	<ul>
+<<<<<<< HEAD
 		<li><a href="#">Create Item</a></li>
 		<li><a href="getall">View Item</a></li>
 		<li><a href="search.jsp">Search Item</a></li>
+=======
+		<li><a href="createitem.jsp">Create Item</a></li>
+		<li><a href="#">View Item</a></li>
+		<li><a href="#">Search Item</a></li>
+>>>>>>> 74c57e283ede47d68abf990f0df83cf130a9939c
 		<li style="float: right"><a class="active" href="#">Logout</a></li>
 	</ul>
 </body>
