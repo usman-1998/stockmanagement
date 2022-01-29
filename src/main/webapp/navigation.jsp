@@ -33,7 +33,7 @@ li a:hover {
 </head>
 <body>
 	<ul>
-		<li><a href="#">Create Item</a></li>
+		<li><a href="createitem.jsp">Create Item</a></li>
 		<li><a href="#">View Item</a></li>
 		<li><a href="#">Search Item</a></li>
 		<li style="float: right"><a class="active" href="#">Logout</a></li>

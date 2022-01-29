@@ -1,48 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 </style>
 </head>
 <body>
-<table>
-<form action="CreateItemServlet">
-  <div class="container">
-    <h1>Item Creation</h1>
-    
-    <tr>
+	<table>
+		<form action="createtitem" method="post">
+			<div class="container">
+				<h1>Item Creation</h1>
 
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter Name" name="name" id="name" required><br><br>
-</tr>
-<tr>
-    <label for="qnt"><b>Quantity</b></label>
-    <input type="password" placeholder="Enter Quantity" name="qnt" id="qnt" required><br><br>
-</tr>
-<tr>
-    <label for="cost"><b>Cost</b></label>
-    <input type="password" placeholder="Enter Cost" name="cost" id="cost" required><br><br>
-    <hr>
-   </tr> 
-   
-<label for="type">Type:</label>
+				<tr>
+					<td><label for="name"><b>Name</b></label></td>
+					<td><input type="text" placeholder="Enter Name" name="name" id="name"
+						required></td>
+				</tr>
+				<tr>
+					<td><label for="qnt"><b>Quantity</b></label></td>
+					<td><input type="number" placeholder="Enter Quantity" name="qnt"
+						id="qnt" required></td>
+				</tr>
+				<tr>
+					<td><label for="cost"><b>Cost</b></label></td>
+					<td><input type="number" placeholder="Enter Cost" name="cost"
+						id="cost" required></td>
+				</tr>
+				<tr>
+				<td><label for="type">Type:</label></td>
+				 <td><select id="type" name="type">
+				 	<option value=" "></option>
+					<option value="Mobile">Mobile</option>
+					<option value="Laptop">Laptop</option>
+					<option value="TV">TV</option>
+					<option value="Ear Phone">Ear Phone</option></td>
+				</select>
+				</tr>
 
-<select id="type">
-  <option value="Mobile">Mobile</option>
-  <option value="Laptop">Laptop</option>
-  <option value="TV">TV</option>
-  <option value="Ear Phone" selected>Ear Phone</option>
-</select><br><br>
+				<tr>
+				<td><button type="submit" class="registerbtn">Create</button></td></tr>
+			</div>
 
-    <button type="submit" class="registerbtn">Create</button>
-  </div>
-  
- 
-</form>
-</table>
+
+		</form>
+	</table>
 </body>
 </html>
